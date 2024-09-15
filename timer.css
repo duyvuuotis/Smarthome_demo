@@ -1,0 +1,107 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    /* background: url(assets/smarthome.jpg); */
+    background-color: beige;
+    background-size: cover;
+    background-position: center;
+}
+
+/*           HEADER             */
+.smarthome_header
+{
+    height: 60px;
+    background: rgba(84, 82, 82, 2);
+    color: #ffeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smarthome_header h2{
+    margin-left: 25px;
+}
+
+.smarthome_header nav{
+    display: flex;
+    width: 40vw;
+}
+
+.smarthome_header nav p{
+    font-size: 20px;
+    margin-right: 13px;
+    color: aqua;
+    text-decoration: underline;
+}
+
+
+.smarthome_header nav a
+{
+    text-decoration: none;
+    color: #ffeaea;
+    font-size: 20px;
+    margin-right: 13px;
+    transition: 1s;
+}
+
+.smarthome_header nav a:hover{
+    color: aqua;
+}
+
+
+.timer{
+    font-size: 40px;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setup_timer{
+    padding: 20px 0 0 20px;
+}
+
+.setup_timer label{
+    font-size: 20px;
+
+}
+
+.setup_timer select{
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 1s;
+    margin-right: 20px;
+}
+
+.setup_timer select:hover{
+    background-color: rgb(163, 184, 184);
+    
+}
+
+.setup_timer input{
+    font-size: 20px;
+    border: 2px solid black;
+    margin-right: 20px;
+    transition: 1s;
+}
+
+
+.setup_timer input:hover{
+    background-color: rgb(163, 184, 184);
+}
+
+.scheduleResult{
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+}

@@ -1,0 +1,192 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    background: url(assets/smarthome.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.smarthome_header
+{
+    height: 60px;
+    background: rgba(84, 82, 82, 2);
+    color: #ffeaea;
+    display: flex;
+    align-items: center;
+}
+
+.smarthome_header h2{
+    margin-left: 25px;
+}
+
+.smarthome_content{
+    display: flex;
+    height: 80vh;
+}
+
+.smarthome_content .smarthome_menu{
+    flex: 30%;
+}
+
+.smarthome_main_content{
+    flex: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.smarthome_main_content .room{
+    margin-right:30px;
+    height: 380px;
+    width: 300px;
+    border: 2px solid black;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 1s;
+    box-shadow: 0 0 30px wheat;
+    padding: 0 35px;
+}
+
+.smarthome_main_content .room:hover{
+    transform: translateY(-16px);
+}
+
+.smarthome_main_content h2{
+    transform: translateY(25px);
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+.room img{
+    width: 200px;
+    height: 140px;
+    background-size:cover ;
+    background-position: center;
+    transform: translateY(50px);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.inf{
+    margin-top: 60px;
+    color: #fff;
+}
+
+.inf .row1{
+    width: 50%;
+    float: left;
+    text-align: left;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.inf .row2{
+    width: 50%;
+    float: left;
+    text-align: left;
+    height: 30px;
+}
+
+.room button{
+    margin-top: 15px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid black;
+    transition: 2s ease ;
+}
+
+.room button:hover{
+    box-shadow: 0 0 30px #fff;
+
+}
+.room a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 30px;
+    font-size: 20px;
+}
+
+.menu_title{
+    margin-top: 40px ;
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+}
+
+.smarthome_menu{
+    background: #7f7676;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 50px;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.list_room{
+    margin-top: 15px;
+}
+
+.list_room li{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.list_room li a{
+    text-decoration: none;
+    color: black;
+}
+
+.list_room li:hover{
+    text-decoration: underline;
+}
+
+.smarthome_footer{
+    background:rgba(84, 82, 82, 2);
+    height: 10.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.smarthome_footer h2{
+    flex: 50%; 
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.smarthome_footer .social_media{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_media a{
+    margin-right: 15px;
+    text-decoration: none;
+    color:black;
+}
+
+.social_media i{
+    font-size: 35px;
+    color:black ;
+}
+
+.social_media p{
+    font-size: 20px;
+    margin-left: 5px;
+}

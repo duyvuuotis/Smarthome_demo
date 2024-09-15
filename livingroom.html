@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vu Duy">
+    <meta name="country" content="Viet Nam">
+    <meta name="Topic" content="Smarthome">
+    <meta name="Topic" content="Nhà thông minh">
+    <meta name="misson" content="misson">
+    <meta name="SmartHome" content="Dinningroom">
+    <meta name="SmartHome" content="Bedroom">
+    <meta name="SmartHome" content="Livingroom">
+    <meta name="SmartHome" content="Home">
+    <meta name="Clever" content="SmartHome 4.0">
+    <title>Smarthome</title>
+    <link rel="stylesheet" href="livingroom.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="living_room_container">
+
+
+        <!-- Header -->
+        <div class="smarthome_header">
+            <h2>SmartHome</h2>
+
+            <nav>
+                <p>Living room</p>
+                <a href="Dinningroom.html">Dinning room</a>
+                <a href="#">Bedroom</a>
+                <a href="timer.html">Timer</a>
+                <a href="index.html">Home</a>
+                <!-- <a href="#"></a> -->
+            </nav>
+            
+        </div>
+
+        <!-- Content -->
+        <div class="smarthome_content">
+
+
+            <!-- box 1 nhiệt độ + độ ẩm -->
+            <div class="temp_hum">
+                <div class="box_1">
+                    
+                    <img src="assets/hot (1).png" alt="">
+                    
+
+                    <p>Nhiệt độ : <span id="Temp"></span></p>
+                </div>
+
+
+                <div class="box_1">
+
+                    <img src="assets/humidity (1).png" alt="">
+
+                    <p>Độ ẩm : <span id="Hum"></span></p>
+                    
+                </div>
+            </div>
+
+            <!-- box 2 door -->
+            <div class="door">
+                <div class="door_img">
+                    <img src="assets/door_close.png" alt="">
+                </div>
+
+                <div class="pass_door">
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="btn">Open</button>
+                </div>
+
+
+            </div>
+
+
+            <!-- box 3 tivi + fan -->
+            <div class="tivi_fan">
+
+                <!-- tivi -->
+                <div class="box_3">
+                    <img id="tivi-img" src="assets/television_off.png" alt="">
+
+                    <!-- btn -->
+                    <div class="btn">
+                        <button type="button" id="btn_on1">ON</button>
+                        <button type="button" id="btn_off1">OFF</button>
+                    </div>
+                </div>
+
+                <!-- fan -->
+                <div class="box_3">
+                    <img id="fan-img" src="assets/fan_off.png" alt="">
+
+                    <!-- btn -->
+                    <div class="btn">
+                        <button id="btn_on2">ON</button>
+                        <button id="btn_off2">OFF</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- box 4 den -->
+            <div class="lamp_window">
+
+                <!-- lamp -->
+                <div class="box_4">
+                    <img id="lamp-img" src="assets/lamp_off.png" alt="">
+
+                    <!-- button -->
+                    <div class="btn">
+                        <button id="btn_on3">ON</button>
+                        <button id="btn_off3">OFF</button>
+                    </div>
+                </div>
+
+                <!-- window -->
+                <div class="box_4">
+                    <img id="window-img" src="assets/window_close.png" alt="">
+
+                    <!-- button -->
+                    <div class="btn">
+                        <button id="btn_on4">ON</button>
+                        <button id="btn_off4">OFF</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <script src="Livingroom.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="timer.css">
+    <script type="module" src="timer.js" defer></script>
+</head>
+<body>
+    <div class="timer_container">
+
+        <!-- Header -->
+        <div class="smarthome_header">
+            <h2>SmartHome</h2>
+
+            <nav>
+                <p>Timer</p>
+                <a href="livingroom.html">Living room</a>
+                <a href="bedroom.html">Bedroom</a>
+                <a href="index.html">Home</a>
+                <a href="Dinningroom.html">Dinning room</a>
+                <!-- <a href="#"></a> -->
+            </nav>
+
+            
+            
+        </div>
+
+        <div class="timer">
+            <p>Hẹn giờ bật tắt các thiết bị điện</p>
+        </div>
+
+        <div class="setup_timer">
+
+            <form id="scheduleForm" class="scheduleForm">
+                <label for="room">Chọn Phòng:</label>
+                <select id="room" class="room">
+                    <option value="living-room">Phòng Khách</option>
+                    <option value="bedroom">Phòng Ngủ</option>
+                    <option value="kitchen">Nhà Bếp</option>
+                </select>
+    
+                <label for="device">Chọn Thiết Bị:</label>
+                <select id="device">
+                    <option value="light">Đèn</option>
+                    <option value="fan">Quạt</option>
+                    <option value="tv">TV</option>
+                </select>
+    
+                <label for="timeOn">Thời Gian Bật:</label>
+                <input type="time" id="timeOn" class="timeOn" required>
+    
+                <label for="timeOff">Thời Gian Tắt:</label>
+                <input type="time" id="timeOff" class="timeOff" required>
+    
+                <button type="submit">Thiết Lập Hẹn Giờ</button>
+            </form>
+    
+            <div id="scheduleResult" class="scheduleResult"></div>
+
+            
+        </div>
+    </div>
+</body>
+</html>

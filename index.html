@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vu Duy">
+    <meta name="country" content="Viet Nam">
+    <meta name="Topic" content="Smarthome">
+    <meta name="Topic" content="Nhà thông minh">
+    <meta name="misson" content="misson">
+    <meta name="SmartHome" content="Dinningroom">
+    <meta name="SmartHome" content="Bedroom">
+    <meta name="SmartHome" content="Livingroom">
+    <meta name="SmartHome" content="Home">
+    <meta name="Clever" content="SmartHome 4.0">
+    <title>Smarthome</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="smarthome_container">
+
+        <!-- Header -->
+        <div class="smarthome_header">
+            <h2>SmartHome</h2>
+            
+        </div>
+
+
+        <!-- Content -->    
+        <div class="smarthome_content">
+
+            <!-- smarthome_menu -->
+            <div class="smarthome_menu">
+                <div class="menu_title">
+                    <i class='bx bx-menu'></i>
+                    <label>Menu</label>
+                </div>
+
+                <div class="list_room">
+                    <ul >
+                        <li><a href="livingroom.html" >Living Room</a></li>
+                        <li><a href="Dinningroom.html">Dinning Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                        <li><a href="timer.html">Timer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- smarthome_main_content -->
+            <div class="smarthome_main_content">
+
+                <!-- Phòng khách -->
+                <div class="room">
+                    <h2>Living room</h2>
+                    <img src="assets/living_room (1).jpg" alt="living room">
+                    
+                    <div class="inf">
+                        <p class="row1 row1-left">Quạt : <span id="fan"></span></p>
+                        <p class="row1">Nhiệt độ : <span id="Temp"> </span></p>
+                        <p class="row2">Độ ẩm : <span id="Hum"></span></p>
+                        <p class="row2">Cảnh báo : <span id="Warn"></span></p>
+                    </div>
+
+                    <button><a href="livingroom.html">Details</a></button>
+                </div>
+
+                <!-- Phòng bếp -->
+                <div class="room">
+                    <h2>Dinning room</h2>
+                    <img src="assets/dinning_room (1).jpg" alt="dinning room">
+
+                    <div class="inf">
+                        <p class="row1 row1-left">Bếp từ : <span id="bep"></span></p>
+                        <p class="row1">Khí gas : <span id="gas"></span></p>
+                        <p class="row2">Nhiệt độ : <span id="Temp1"></span></p>
+                        <p class="row2">Cảnh báo : <span id="Warn1"></span></p>
+                    </div>
+
+                    <button><a href="Dinningroom.html">Details</a></button>
+                </div>
+
+                <!-- Phòng ngủ -->
+                <div class="room">
+                    <h2>Bedroom</h2>
+                    <img src="assets/bedroom (1).jpg" alt="bedroom">
+
+                    <div class="inf">
+                        <p class="row1 row1-left">Quạt :</p>
+                        <p class="row1">Độ ẩm :</p>
+                        <p class="row2">Nhiệt độ :</p>
+                        <p class="row2">Đèn :</p>
+                    </div>
+
+                    <button><a href="bedroom.html">Details</a></button>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <!-- Footer --> 
+        <div class="smarthome_footer">
+            <h2>Duc Duy.</h2>
+
+            <div class="social_media">
+                <a href="https://www.facebook.com/profile.php?id=100031332004647" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/_vuduyy_/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <p>Hotline : <a href="tel:0368349475" >0368349475</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <!-- lien ket voi functions.js -->
+    <script src="Script.js"></script>
+</body>
+</html>
