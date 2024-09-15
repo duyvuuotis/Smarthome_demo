@@ -65,12 +65,12 @@
                 <!-- box 2 door -->
             <div class="door">
                 <div class="door_img">
-                    <img src="assets/door_close.png" alt="">
+                    <img id="openDoor" src="assets/door_close.png" alt="">
                 </div>
 
                 <div class="pass_door">
-                    <input type="password" placeholder="Password" required>
-                    <button type="submit" class="btn">Open</button>
+                    <input id="passwordInput" type="password" placeholder="Password" required>
+                    <button onclick="checkPassword()" id="submitData" type="submit" class="btn">Open</button>
                 </div>
 
             </div>
@@ -138,6 +138,7 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
     <script src="bedroom.js"></script>
 </body>
 </html>

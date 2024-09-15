@@ -21,6 +21,19 @@ body
     color: #ffeaea;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.smarthome_header a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 65px;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.smarthome_header a:hover{
+    color: aqua;
 }
 
 .smarthome_header h2{

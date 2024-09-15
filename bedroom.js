@@ -17,7 +17,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics(); 
 var database = firebase.database();
-
+var db = firebase.firestore();
 
 // Đèn
 
@@ -156,3 +156,38 @@ database.ref("/Smarthome/Bedroom/Tivi").on("value", function(snapshot){
         document.getElementById("tivi-img").src = "assets/television_off.png"
     }
 })
+
+
+// Kiểm tra mật khẩu cửa
+function checkPassword(){
+    var inputPassword = document.getElementById('passwordInput').value;
+    
+    // Lấy mật khẩu đã lưu từ Firebase 
+    db.collection("passwords").doc("doorPassword").get().then((doc) => {
+        if (doc.exists) {
+            const savedPassword = doc.data().password;
+
+            // So sánh mật khẩu nhập vào với mật khẩu lưu trên Firebase
+            if (inputPassword === savedPassword) {
+                // statusMessage.innerHTML = "Mật khẩu chính xác! Cửa đã mở.";
+                
+                // Gọi hàm mở cửa ở đây
+                openDoor();
+            } else {
+                alert("Mật khẩu sai, vui lòng thử lại.");
+                
+            }
+        } else {
+            alert("Không tìm thấy mật khẩu lưu trên Firebase");
+        }
+    }).catch((error) => {
+        console.error("Lỗi khi lấy dữ liệu: ", error);
+    });
+}
+
+// Hàm mở cửa
+function openDoor() {
+    alert("Mật khẩu chính xác! Cửa đã mở.");
+    // Thực hiện hành động mở cửa, như điều khiển thiết bị hoặc hiển thị giao diện
+    document.getElementById('openDoor').src="assets/door_open.png";
+}
