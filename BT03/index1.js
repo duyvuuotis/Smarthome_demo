@@ -45,7 +45,7 @@ submit.addEventListener("click", function (event) {
                 last_login:dt,
             })
             alert("User login in");
-            window.location.href ="../index.html";
+            window.location.href ="../home.html";
             // ...
         })
         .catch((error) => {

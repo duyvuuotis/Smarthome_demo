@@ -75,3 +75,33 @@ database.ref("/Smarthome/Dinningroom/Warn").on("value", function(snapshot){
     var Warn1 = snapshot.val();
     document.getElementById("Warn1").innerHTML = Warn1;
 })
+
+
+
+
+// Phòng ngủ
+
+
+// Nhiet do----------------------------------------------
+database.ref("/Smarthome/Bedroom/Temp").on("value", function(snapshot){
+    var temp2 = snapshot.val();
+    document.getElementById("Temp2").innerHTML = temp2;
+})
+
+// Máy lạnh
+database.ref("/Smarthome/Bedroom/Máy lạnh").on("value", function(snapshot){
+    var fan = snapshot.val();
+    document.getElementById("fan1").innerHTML = fan;
+})
+
+// Độ ẩm
+database.ref("/Smarthome/Bedroom/Hum").on("value", function(snapshot){
+    var hum1 = snapshot.val();
+    document.getElementById("hum1").innerHTML = hum1;
+})
+
+// Đèn
+database.ref("/Smarthome/Bedroom/Đèn").on("value", function(snapshot){
+    var Lamp = snapshot.val();
+    document.getElementById("Lamp").innerHTML = Lamp;
+})
